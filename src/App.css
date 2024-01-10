@@ -1,0 +1,114 @@
+*{
+  box-sizing: border-box;
+  font-family: open;
+}
+
+@font-face {
+  font-family: open;
+  src: url(./fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+body{
+  background-color: #d4a373;
+  color: #fefae0;
+}
+
+main{
+  max-width: auto;
+  margin: 3rem 10rem;
+}
+
+h1{
+  text-align: center;
+  color: #fefae0;
+  margin: 0;
+  font-size: 5rem;
+}
+h1 span{
+  font-size: 1rem;
+  vertical-align: top;
+  display:inline-block;
+  margin-top:10px;
+
+}
+form{
+  margin-top: 20px;
+}
+
+form input{
+  width: 100%;
+  background-color: transparent;
+  color: #faedcd;
+  border: 2px solid #e9edc9;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+form input[type="datetime-local"]{
+  color: #faedcd;
+}
+form input:focus{
+  outline: none;
+  border: 2px solid #e9edc9;
+}
+form input::placeholder{
+  color: #faedcd;;
+}
+form div.basic{
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+form button{
+  display: block;
+  width: 200px;
+  margin: 5px auto 0 auto;
+  margin-top:1rem;
+  border: 0;
+  border-radius: 5px;
+  padding: .5rem;
+  font-size: 2rem;
+  background-color: #ccd5ae;
+  color: #d4a373;
+}
+
+div.transactions{
+  margin-top: 15px;
+}
+
+div.transaction{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-top: 1px solid #e9edc9;
+}
+
+
+div.transaction div.name{
+  font-size: 2rem;
+}
+div.transaction div.description{
+  font-size: 1.5rem;
+  color:#faedcd;
+}
+
+div.right{
+  text-align: right;
+}
+
+div.price.green{
+  font-size: 2rem;
+  color: #80ed99;
+}
+
+div.price.red{
+  font-size: 2rem;
+  color: #fe6d73;
+}
+div.transaction div.datetime{
+  font-size: 1.5rem;
+  color: #faedcd;
+}
+
+
+
